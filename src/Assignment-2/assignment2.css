@@ -69,21 +69,15 @@ li {
   list-style: none;
 }
 
-/* li:hover {
+li:hover {
   background-color: rgb(240, 230, 230);
-} */
-
-/* .divimg {
-  float: left;
-  width: 25%;
-  padding: 10px;
-  margin-bottom: 10px;
-} */
+}
 
 .column {
   float: left;
   width: 30%;
   padding: 10px;
+  margin-left: 100px;
   /* background-color: black; */
 }
 img {
@@ -91,10 +85,11 @@ img {
   height: 50%;
 }
 
-#rigth-sidebar-menu {
+#right-sidebar-menu {
   /* float: right; */
   /* background: rgb(224, 37, 37); */
   line-height: 200%;
+  margin-left: 50px;
 }
 
 #footer {
