@@ -1,34 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title></title>
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-	<meta http-equiv="Pragma" content="no-cache" />
-	<meta http-equiv="Expires" content="0" />
-	<script src="bundle.js" type="text/javascript"></script>
-</head>
+  <head>
+    <title></title>
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <script src="bundle.js" type="text/javascript"></script>
+  </head>
 
-<body>
-	<div id="container">
+  <body>
+    <div id="container">
+      <!-- Start your code from here -->
+      <div class="parent">
+        <div class="child1">
+          <h1 class="heading">Your best value proposition.</h1>
+          <p class="passage">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis
+            minima illum! Repellendus, corrupti qui provident vitae cum, itaque
+            veritatis sed similique iure iusto omnis quo voluptas sunt doloribus
+            possimus.
+          </p>
+          <button class="btn">Start free trail</button>
+        </div>
+        <div class="child2">
+          <iframe
+            src="https://en.wikipedia.org/wiki/Wikipedia"
+            frameborder="0"
+            id="render-wiki"
+          ></iframe>
+        </div>
+        <div class="parent1">
+          <div class="child3">
+            <h1 class="heading1">Your best value proposition.</h1>
+            <p class="passage1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quis
+              minima illum! Repellendus, corrupti qui provident vitae cum, itaque
+              veritatis sed similique iure iusto omnis quo voluptas sunt doloribus
+              possimus.
+            </p>
+            <button class="btn">Start free trail</button>
+          </div>
+          <div class="child4">
+            <iframe
+              src="https://www.dictionary.com/"
+              frameborder="0"
+              id="render-wiki"
+            ></iframe>
+          </div>
+      </div>
 
-	<!-- Start your code from here -->
-	
-	<!-- End your code -->
-
-	</div>
-</body>
-<script>
-/* DO NOT EDIT THIS CODE- WRITTERN TO PREVENT CSS CACHING */	  
-	// Get HTML head element
-	var head = document.getElementsByTagName('HEAD')[0]; 
-	// Create new link Element
-	var link = document.createElement('link');
-	// set the attributes for link element 
-	link.rel = 'stylesheet'; 
-	link.type = 'text/css';
-	link.href = './assignment3.css?v='+ new Date().getTime(); 
-	// Append link element to HTML head
-	head.appendChild(link); 
-	/* DO NOT EDIT THIS CODE- WRITTERN TO PREVENT CSS CACHING */	  
-</script> 
+      <!-- End your code -->
+    </div>
+  </body>
+  <script>
+    /* DO NOT EDIT THIS CODE- WRITTERN TO PREVENT CSS CACHING */
+    // Get HTML head element
+    var head = document.getElementsByTagName("HEAD")[0];
+    // Create new link Element
+    var link = document.createElement("link");
+    // set the attributes for link element
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = "./assignment3.css?v=" + new Date().getTime();
+    // Append link element to HTML head
+    head.appendChild(link);
+    /* DO NOT EDIT THIS CODE- WRITTERN TO PREVENT CSS CACHING */
+  </script>
 </html>
