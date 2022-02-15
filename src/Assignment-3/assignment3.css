@@ -1,7 +1,84 @@
 /* Our CSS file. */
+.container,
+.content {
+  width: 100%;
+  height: 100%;
+}
+.parent {
+  margin-top: 2%;
+  margin-left: 2%;
+  background-color: #f2f2f2;
+}
+.parent1 {
+  margin-top: 5%;
+  margin-left: 300px;
+  background-color: #f2f2f2;
+}
+.heading {
+  width: 250px;
+  border: 3px solid #d87f0b;
+  padding: 3px;
+}
+.heading1 {
+  width: 370px;
+  border: 3px solid #73ad21;
+  padding: 6px;
+  margin-left: 30px;
+}
+.passage {
+  border: 3px solid #de62e2;
+  padding: 1px;
+  margin-top: 4px;
+  display: block;
+  width: 300px;
+}
 
+.passage1 {
+  border: 3px solid #de62e2;
+  padding: 5px;
+  margin-top: 4px;
+  display: block;
+  width: 300px;
+  margin-left: 30px;
+  text-align: center;
+}
 
-.container, .content {
-width: 100%;
-height: 100%;
+.child1 {
+  width: 50%;
+  border: 1px solid red;
+  display: inline-block;
+}
+.child2 {
+  /* width: 50%; */
+  border: 1px solid red;
+  display: inline-block;
+}
+.child3 {
+  width: 50%;
+  text-align: center;
+  align-items: center;
+  border: 1px solid red;
+  display: inline-block;
+}
+.child4 {
+  width: 50%;
+  border: 1px solid red;
+  display: inline-block;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: black;
+  color: #f2f2f2;
+  text-align: center;
+  margin-top: auto;
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+#render-wiki {
+  float: left;
+  margin-top: 20px;
+  margin-left: 50px;
+  height: 400px;
 }
