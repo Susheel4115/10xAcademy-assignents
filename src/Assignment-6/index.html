@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Thread Maker🤑🕸</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  </head>
+  <body>
+
+    <main>
+      <form class="form">
+        <div class="info">
+          <p>
+            <strong>Characters:</strong>
+            <span class="count">00
+          </p>
+          <p>
+            <strong>Threads</strong>
+            <span class="threadCount">00</span>
+          </p>
+        </div>
+        <textarea
+          class="textarea"
+          placeholder="chirp chirp...  🐦"
+          required=""
+          wrap="soft"
+          onkeyup="textInfo(this);"
+        ></textarea>
+        <button type="submit" class="btn">
+          Thread
+          <span class="btn-icon">&#9992;</span>
+        </button>
+      </form>
+
+      <div class="thread-box">
+       
+        <div class="thread">
+          <p>
+            <span class="sl">✨</span> <br />
+            Your threads will be here. 🔥 <br /><br />
+            ℹ️ The character limit for each tweet is 275. <br /><br />
+          </p>
+      
+          <p>
+            Here are some dummy text for testing: <br />
+            Plastic pollution has become one of the most pressing environmental
+            issues, as rapidly increasing production of disposable plastic
+            products overwhelms the world’s ability to deal with them. Plastic
+            pollution is most visible in developing Asian and African nations,
+            where garbage collection systems are often inefficient or
+            nonexistent. But the developed world, especially in countries with
+            low recycling rates, also has trouble properly collecting discarded
+            plastics. Plastic trash has become so ubiquitous it has prompted
+            efforts to write a global treaty negotiated by the United Nations.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+    <script type="text/javascript" charset="utf-8">
+      function deleteThread(e) {
+        const [el, index] = [e.target, e.target.dataset.index];
+
+        // Delete Tweet
+        if (el.classList.contains("close")) {
+          // Remove the selected el
+          tweetsArr.splice(index, 1);
+
+          // update the UI
+          displayUI(threadBox, tweetsArr);
+        }
+
+        // Copy Tweet
+        if (el.classList.contains("tweet")) {
+          let tw = tweetsArr.splice(index, 1).join("");
+          //console.log( tw )
+          // el.innerText
+          const text = el.innerText;
+        }
+      }
+
+      threadBox.addEventListener("click", deleteThread);
+    </script>
+  </body>
+</html>
